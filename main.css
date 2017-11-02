@@ -99,6 +99,7 @@ a
 }
 #about
 {
+    clear: both;
     font-family: "Lato Light";
     font-size: 28pt;
     color: #16a085;
@@ -111,6 +112,7 @@ a
 
 #why
 {
+        clear: both;
     font-family:"Lato Light";
     font-size: 28pt;
     color: #16a085;
@@ -118,6 +120,7 @@ a
 
 #cheap
 {
+        clear: both;
     font-family:  'Lato Light';
     font-size: 28pt;
     color: #16a085;
@@ -163,11 +166,13 @@ a
 }
 .pictures
 {
+        clear: both;
     margin-top: 84px;
     margin-left: -243px;
 }
 .header1 div
 {
+        clear: both;
     font-family: "Open Sans Regular";
     font-size: 15px;
     color: #16a085;
@@ -178,6 +183,7 @@ a
 }
 .text
 {
+        clear: both;
     font-family: "Open Sans Regular";
     font-size: 15px;
     color: #7f8c8d;
@@ -192,6 +198,7 @@ footer
 
 .footerrow
 {
+        clear: both;
     padding-top: 10px;
     display: flex;
     flex-direction: row;
@@ -206,6 +213,7 @@ footer
 }
 .footercolumn
 {
+        clear: both;
      display: flex;
     flex-direction: column;
     justify-content:space-around;
@@ -265,4 +273,3 @@ footer
     height: 37px;
     text-transform: uppercase;
 }
-
