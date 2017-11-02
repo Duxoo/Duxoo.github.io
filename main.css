@@ -84,46 +84,18 @@ a
 }
 
 #row{
+    text-align: center;
     height: 373px;
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:flex-start;
-    margin-left: 151px;
+    margin-left: 11.9841269841%;
     margin-top: 80px;
-    margin-right: 151px;
+    margin-right: 11.9841269841%;
     font-family:  'Lato Light';
     font-size: 28pt;
-    color: #16a085;
-}
-#about
-{
-    clear: both;
-    font-family: "Lato Light";
-    font-size: 28pt;
-    color: #16a085;
-    /text-transform: uppercase;
-    display: flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items: flex-start;
-}
-
-#why
-{
-        clear: both;
-    font-family:"Lato Light";
-    font-size: 28pt;
-    color: #16a085;
-}
-
-#cheap
-{
-        clear: both;
-    font-family:  'Lato Light';
-    font-size: 28pt;
-    color: #16a085;
     color: #16a085;
 }
 .column
@@ -132,13 +104,36 @@ a
     font-family: "Lato Regular";
     font-size: 16px;
     color: #7f8c8d;
-    margin-top: 40px;
+    margin-top: 30px;
     max-width: 299px;
-    margin-left: -50px;
     text-align: center;
     max-height: 102px;
-    /min-width: 299px;
+    min-width: 23.9682539683%;
 }
+#about
+{
+    font-family: "Lato Light";
+    font-size: 28pt;
+    color: #16a085;
+    /text-transform: uppercase;
+
+}
+
+#why
+{
+    font-family:"Lato Light";
+    font-size: 28pt;
+    color: #16a085;
+}
+
+#cheap
+{
+    font-family:  'Lato Light';
+    font-size: 28pt;
+    color: #16a085;
+    color: #16a085;
+}
+
 #grey
 {
     height: 331px;
@@ -147,30 +142,24 @@ a
 }
 .news
 {
-    margin-left: 151px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-right: 151px;
+    justify-content:space-around;
+    align-items:flex-start;
+    margin-left: 11.9841269841%;
+    margin-right: 11.9841269841%;
 }
 #recent
 {
-    float: left;
     margin-top: 41px;
-    margin-left: 151px;
+    margin-left: 11.9841269841%;
     font-family: "Lato Light";
     font-size: 26pt;
     color: black;
     text-transform: uppercase;
 }
-.pictures
-{
-        clear: both;
-    margin-top: 84px;
-    margin-left: -243px;
-}
-.header1 div
+
+.header1
 {
         clear: both;
     font-family: "Open Sans Regular";
@@ -183,7 +172,6 @@ a
 }
 .text
 {
-        clear: both;
     font-family: "Open Sans Regular";
     font-size: 15px;
     color: #7f8c8d;
@@ -198,14 +186,13 @@ footer
 
 .footerrow
 {
-        clear: both;
     padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items:flex-start;
-    margin-right: 548px;
-    margin-left: 151px;
+    margin-left: 11.9841269841%;
+    margin-right: 30%;
     font-family: "Open Sans Light";
     font-size: 18px;
     color: white;
@@ -229,7 +216,7 @@ footer
 .logo2
 {
    margin-top: -45px;
-    margin-right: 151px;
+    margin-right: 11.9841269841%;
     float: right;
     background-image: url(images/logo2.png);
     width:192px;
@@ -258,7 +245,7 @@ footer
 
 .button1 {
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 25%;
         display: flex;
     flex-direction: row;
     justify-content:center;
