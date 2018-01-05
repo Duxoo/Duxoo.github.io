@@ -322,7 +322,7 @@ footer
     }
     .navigation
     {
-        margin-left: 90%;
+       / margin-left: 90%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
@@ -363,5 +363,9 @@ footer
     #grey
     {
         height: 500px;
+    }
+    #logo
+    {
+        margin-left: 0px;
     }
 }
