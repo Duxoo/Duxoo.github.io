@@ -314,7 +314,7 @@ footer
     box-shadow: 0 0 10px  #16a085;
 }
 
-@media (max-width: 838px)
+@media screen and (max-width: 500px)
 {
 #nav li
     {
@@ -322,7 +322,7 @@ footer
     }
     .navigation
     {
-       / margin-left: 90%;
+        margin-left: 90%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
@@ -347,7 +347,7 @@ footer
     }
     .logo2
     {
-        margin-right: 0px;
+        display: none;
     }
 
     .news
@@ -367,5 +367,9 @@ footer
     #logo
     {
         margin-left: 0px;
+    }
+    .wind
+    {
+        font-size: 65pt;
     }
 }
