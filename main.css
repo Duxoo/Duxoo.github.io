@@ -314,7 +314,7 @@ footer
     box-shadow: 0 0 10px  #16a085;
 }
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 500px)/*mobile*/
 {
 #nav li
     {
@@ -322,7 +322,7 @@ footer
     }
     .navigation
     {
-        margin-left: 90%;
+        margin-left: 80%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
@@ -371,5 +371,70 @@ footer
     .wind
     {
         font-size: 65pt;
+    }
+    .footerrow{
+        justify-content: space-between;
+    }
+}
+@media screen  and (max-width: 979px) /* Tablet */
+{
+    #nav li
+    {
+        display: none;
+    }
+    .navigation
+    {
+        margin-left: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    #row{
+    text-align: center;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-left: 11.9841269841%;
+    margin-top: 80px;
+    margin-right: 11.9841269841%;
+    font-family:  'Lato Light';
+    font-size: 28pt;
+    color: #16a085;
+    }
+    .button1{
+        margin-bottom: 30px;
+    }
+    .logo2
+    {
+        margin-right: 0%;
+    }
+
+    .news
+{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-left: 11.9841269841%;
+    margin-right: 11.9841269841%;
+}
+    #grey
+    {
+        height: 500px;
+    }
+    #logo
+    {
+        margin-left: 0px;
+    }
+    .wind
+    {
+        font-size: 65pt;
+    }
+    .footerrow{
+        justify-content: space-between;
     }
 }
