@@ -147,7 +147,22 @@ a
     color: #16a085;
     color: #16a085;
 }
-
+#picture1
+{
+    background-image: url("http://online-mouse.ru/wp-content/uploads/2011/05/0803201552231img_3487b1-e1306063363962-300x100.jpg");
+    width: 300px;
+    max-width: 100%;
+    height: 100px;
+    min-height: 100%;
+}
+#picture2
+{
+    background-image: url("http://abpacking.com/wp-content/uploads/2014/12/cherries-300x100.jpg");
+    width: 300px;
+    max-width: 100%;
+    height: 100px;
+    min-height: 100%;
+}
 #grey
 {
     height: 331px;
@@ -176,7 +191,7 @@ a
 
 .header1
 {
-        clear: both;
+    clear: both;
     font-family: "Open Sans Regular";
     font-size: 15px;
     color: #16a085;
@@ -333,5 +348,20 @@ footer
     .logo2
     {
         margin-right: 0px;
+    }
+
+    .news
+{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-left: 11.9841269841%;
+    margin-right: 11.9841269841%;
+}
+    #grey
+    {
+        height: 500px;
     }
 }
