@@ -376,6 +376,8 @@ footer
         font-size: 65pt;
     }
     .footerrow{
+        margin-left: 0px;
+        font-size: 12px;
         justify-content: space-between;
     }
 }
