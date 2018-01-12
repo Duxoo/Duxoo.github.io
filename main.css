@@ -1,72 +1,61 @@
 @font-face
 {
     font-family: "Lato Light";
-    src:url(fonts/Lato.ttf);
-    
-}
-.navigation
-{
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    background-image:url(images/navig.png);
-    color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-bottom-color: #009999;
-    border-radius: 4px;
-    display: none;
-}
-
-#mel
-{
-    background-image: url(http://img-fotki.yandex.ru/get/5413/24502101.16/0_76959_84377a47_XXL.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    max-width: 100%;
-    min-height: 100%;
-}
-body
-{
-    margin: 0;
-}
-header
-{
-    min-height: 3.125em;
-    background-color:#009999;
-    
-}
-#logo
-{
-    float: left;
-    margin-left: 9.4375em;
-    margin-top: 0.75em;
-    background-image: url(images/logo.png);
-    background-repeat: no-repeat;
-    width: 8.3125em;
-    height: 1.5625em;
-}
-#nav
-{
-    float: right;
-    margin-right: 9.4375em;
-    font-family: 'Open Sans';
-    font-size: 11pt;
-    text-transform: uppercase;
-    display: inline-flex;
-    list-style-type: none;
-}
-#nav li
-{
-    margin-left: 15px;
+    src:url(fonts/Lato.ttf);  
 }
 a
 {
     text-decoration: none;
     color: white;
 }
+body
+{
+    margin: 0;
+    padding: 0;
+}
+    header
+    {
+        min-height: 3.125em;
+        background-color:#009999;
 
+    }
+        #logo
+        {
+            float: left;
+            margin-left: 9.4375em;
+            margin-top: 0.75em;
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            width: 8.3125em;
+            height: 1.5625em;
+        }
+        #nav
+        {
+            float: right;
+            margin-right: 9.4375em;
+            font-family: 'Open Sans';
+            font-size: 11pt;
+            text-transform: uppercase;
+            list-style-type: none;
+        }
+        #nav li
+        {
+            margin-left: 15px;
+            display: inline;
+        }
+        .navigation
+        {
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            background-image:url(images/navig.png);
+            color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-bottom-color: #009999;
+            border-radius: 4px;
+            display: none;
+        }
 #main1
 {
     background-image: url(http://img-fotki.yandex.ru/get/5413/24502101.16/0_76959_84377a47_XXL.jpg);
@@ -80,22 +69,31 @@ a
     justify-content: center;
     align-items: center;
 }
-.wind
-{
-    text-align: center;
-    color: white;
-    font-size: 90pt;
-    font-family: 'Lato Hairline';
-    text-transform: uppercase;
-}
-.jorem
-{
-    text-align: center;
-    color: white;
-    font-size: 34pt;
-    font-family: 'Lato Hairline';
-    text-transform: uppercase;
-}
+    .wind
+    {
+        text-align: center;
+        color: white;
+        font-size: 90pt;
+        font-family: 'Lato Hairline';
+        text-transform: uppercase;
+    }
+    .jorem
+    {
+        text-align: center;
+        color: white;
+        font-size: 34pt;
+        font-family: 'Lato Hairline';
+        text-transform: uppercase;
+    }
+    #mel
+    {
+        background-image: url(http://img-fotki.yandex.ru/get/5413/24502101.16/0_76959_84377a47_XXL.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+        max-width: 100%;
+        min-height: 100%;
+    }
 
 #row{
     text-align: center;
@@ -301,6 +299,7 @@ footer
     height: 100%;
     background-color: #009999;
     display: none;
+    border-top: 5px solid white;
 }
 #navig li
 {
@@ -313,19 +312,23 @@ footer
 {
     box-shadow: 0 0 10px  #16a085;
 }
-
+#navi
+{
+    margin: 0px;
+}
 @media screen and (max-width: 500px)/*mobile*/
 {
-#nav li
+    #nav
     {
         display: none;
+        margin-right: 0em;
     }
     .navigation
     {
-        margin-left: 80%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
+        float: right;
     }
     #row{
     text-align: center;
@@ -378,16 +381,15 @@ footer
 }
 @media screen  and (max-width: 979px) /* Tablet */
 {
-    #nav li
+    #nav
     {
         display: none;
+        margin-right: 0em;
     }
     .navigation
     {
-        margin-left: 80%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
+        display: block;
+        float: right;
     }
     #row{
     text-align: center;
@@ -425,10 +427,6 @@ footer
     #grey
     {
         height: 500px;
-    }
-    #logo
-    {
-        margin-left: 0px;
     }
     .wind
     {

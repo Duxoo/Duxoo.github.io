@@ -33,7 +33,7 @@ function show(){
     document.getElementById("main1").style.display='none';
     document.getElementById("row").style.display='none';
     document.getElementById("grey").style.display='none';
-    document.getElementById("navig").style.display='block';
+   document.getElementById("navig").style.display='block';
         }
     else{
     document.getElementById("main1").style.display='flex';
