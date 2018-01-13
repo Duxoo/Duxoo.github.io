@@ -28,18 +28,14 @@ function go(){
 
 
 function show(){
-    if(document.getElementById("main1").style.display=='flex')
+    if(document.getElementById("navig").style.display=='none')
         {
-    document.getElementById("main1").style.display='none';
-    document.getElementById("row").style.display='none';
-    document.getElementById("grey").style.display='none';
    document.getElementById("navig").style.display='block';
+             document.getElementById("navigation").style.backgroundImage="url(images/delete.png)";
         }
     else{
-    document.getElementById("main1").style.display='flex';
-    document.getElementById("row").style.display='flex';
-    document.getElementById("grey").style.display='block';
     document.getElementById("navig").style.display='none';
+       document.getElementById("navigation").style.backgroundImage="url(images/navig.png)";
     }
 
 }
