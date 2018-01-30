@@ -6,7 +6,7 @@
 a
 {
     text-decoration: none;
-    color: white;
+    color: #9bded1;
 }
 body
 {
@@ -37,6 +37,7 @@ body
             font-size: 11pt;
             text-transform: uppercase;
             list-style-type: none;
+            color: #9bded1;
         }
         #nav li
         {
