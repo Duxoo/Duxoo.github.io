@@ -298,11 +298,13 @@ footer
 }
 #navig
 {
-    height: 100%;
+    height: 0%;
     background-color: #009999;
-    display: none;
+    display: block;
     border-top: 5px solid white;
     z-index: 1000;
+     transition-property:height;
+    transition-duration: 2s;
 }
 #navig li
 {
@@ -319,12 +321,90 @@ footer
 {
     margin: 0px;
 }
+#aboutUS {
+    height: 120px;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#aboutUS div {
+    margin-left: 149.3px;;
+    font-family: "Lato Hairline";
+    font-size: 50pt;
+    text-transform: uppercase;
+    color: white;
+}
+#awesomeTeam {
+    height: 565px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+#awesomeTextTitle {
+    text-transform: uppercase;
+    color: #16a085;
+    margin-right: 0em;
+    margin-top: 79px;
+    font-size: 40pt;
+    
+}
+#ppl {
+    background-image: url(images/ppl.png);
+    height: 156px;
+    width: 960px;
+    margin-top: 10px;
+}
+.awesomeText {
+    color: #7f8c8d;
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: "Lato Regular";
+    text-align: center;
+}
+#aboutGrey {
+    height: 330px;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.aboutGreyColumn {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 26pt;
+    font-family: "Lato Light";
+    text-transform: uppercase;
+}
+.aboutGreyColumn div {
+    color: #7f8c8d;
+    font-size: 13pt;
+    margin-top: 10px;
+    font-family: "Lato Regular";
+    text-align: center;
+    text-transform: none;
+}
 @media screen and (max-width: 500px)/*mobile*/
 {
+    #aboutUS div {
+        font-size: 30pt;
+    }
+    #awesomeTextTitle {
+        font-size: 30pt;
+    }
     #nav
     {
-        display: none;
-        margin-right: 0em;
+        display: none; 
     }
     #navigation
     {
@@ -386,6 +466,34 @@ footer
 }
 @media screen  and (max-width: 979px) /* Tablet */
 {
+    #awesomeTeam {
+        height: 470px;
+    }
+    .aboutGreyColumn {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #aboutGrey {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #ppl {
+        display: none;
+    }
+    #aboutGrey {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 420px;
+    }
+    .aboutGreyColumn div {
+        font-size: 10pt;
+    }
+    .awesomeText {
+        font-size: 12pt;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     #nav
     {
         display: none;

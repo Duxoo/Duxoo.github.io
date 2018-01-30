@@ -32,6 +32,8 @@ function show(){
         {
    document.getElementById("navig").style.display='block';
              document.getElementById("navigation").style.backgroundImage="url(images/delete.png)";
+            var obj=document.getElementById("navig");
+            obj.style.height="100";
         }
     else{
     document.getElementById("navig").style.display='none';
