@@ -396,11 +396,8 @@ footer
 }
 @media screen and (max-width: 500px)/*mobile*/
 {
-    #aboutUS div {
-        font-size: 30pt;
-    }
     #awesomeTextTitle {
-        font-size: 30pt;
+        font-size: 20pt;
     }
     #nav
     {
@@ -466,17 +463,22 @@ footer
 }
 @media screen  and (max-width: 979px) /* Tablet */
 {
+        #aboutUS {
+        justify-content: center;
+        align-items: center;
+    }
+        #aboutUS div {
+        font-size: 20pt;
+            margin-left: 0px;
+    }
     #awesomeTeam {
-        height: 470px;
+        height: 100%;
     }
     .aboutGreyColumn {
         margin-left: 0px;
         margin-right: 0px;
     }
-    #aboutGrey {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+
     #ppl {
         display: none;
     }
@@ -485,6 +487,9 @@ footer
         justify-content: flex-start;
         align-items: center;
         height: 420px;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 100%;
     }
     .aboutGreyColumn div {
         font-size: 10pt;
