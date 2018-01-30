@@ -379,6 +379,7 @@ footer
 }
 .aboutGreyColumn {
     margin-top: 10px;
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -470,14 +471,15 @@ footer
     }
         #aboutUS div {
         font-size: 20pt;
-            margin-left: 0px;
+        margin-left: 0px;
     }
     #awesomeTeam {
         height: 100%;
     }
     .aboutGreyColumn {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     #ppl {
@@ -497,8 +499,9 @@ footer
     }
     .awesomeText {
         font-size: 12pt;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
     #nav
     {
