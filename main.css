@@ -3,6 +3,11 @@
     font-family: "Lato Light";
     src:url(fonts/Lato.ttf);  
 }
+/*
+
+STYLES FOR EVERY PAGE 
+
+*/
 a
 {
     text-decoration: none;
@@ -59,6 +64,56 @@ body
                 transition-property: background-image;
     transition-duration: 1.2s;
         }
+footer
+{
+    height: 160px;
+    background-color: #2c3e50;
+}
+
+.footerrow
+{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:flex-start;
+    margin-left: 11.9841269841%;
+    margin-right: 30%;
+    font-family: "Open Sans Light";
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+.footercolumn
+{
+        clear: both;
+     display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:flex-start;
+    margin-top: 10px;
+    font-family: "Open Sans Regular";
+    color: #7f8e9c;
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: lowercase;
+    height: 60px;
+}
+.logo2
+{
+   margin-top: -45px;
+    margin-right: 11.9841269841%;
+    float: right;
+    background-image: url(images/logo2.png);
+    width:192px;
+    height: 36px;
+}
+
+/*
+
+STYLES FOR MAIN PAGE
+
+*/
 #main1
 {
     background-image: url(http://img-fotki.yandex.ru/get/5413/24502101.16/0_76959_84377a47_XXL.jpg);
@@ -209,51 +264,6 @@ body
     max-width: 300px;
     margin-top: 10px;
 }
-footer
-{
-    height: 160px;
-    background-color: #2c3e50;
-}
-
-.footerrow
-{
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items:flex-start;
-    margin-left: 11.9841269841%;
-    margin-right: 30%;
-    font-family: "Open Sans Light";
-    font-size: 18px;
-    color: white;
-    text-transform: uppercase;
-}
-.footercolumn
-{
-        clear: both;
-     display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items:flex-start;
-    margin-top: 10px;
-    font-family: "Open Sans Regular";
-    color: #7f8e9c;
-    font-size: 14px;
-    margin-top: 10px;
-    text-transform: lowercase;
-    height: 60px;
-}
-.logo2
-{
-   margin-top: -45px;
-    margin-right: 11.9841269841%;
-    float: right;
-    background-image: url(images/logo2.png);
-    width:192px;
-    height: 36px;
-}
-
 
 .button
 {
@@ -322,6 +332,11 @@ footer
 {
     margin: 0px;
 }
+/*
+
+STYLES FOR PAGE ABOUT US 
+
+*/
 #aboutUS {
     height: 120px;
     background-color: #2c3e50;
@@ -369,7 +384,8 @@ footer
     text-align: center;
 }
 #aboutGrey {
-    height: 330px;
+    height: 100%;
+    padding-bottom: 20px;
     background-color: #ecf0f1;
     display: flex;
     justify-content: space-between;
@@ -396,6 +412,68 @@ footer
     text-align: center;
     text-transform: none;
 }
+/*
+
+STYLES FOR PAGE SERVICES
+
+*/
+#services {
+    height: 170px;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(images/mel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+#services div {
+    margin-left: 149.3px;;
+    font-family: "Lato Hairline";
+    font-size: 50pt;
+    text-transform: uppercase;
+    color: white;
+}
+#mainService {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#servicepicture {
+    /margin-right: 450px;
+}
+#servicepicture ul li {
+    color:#16a085;
+}
+#servicepicture ul li span {
+list-style-type: square;
+font-family: "Lato Regular";
+font-size: 12pt;
+color:#7f8c8d;
+}
+ul:not([class]),
+ol:not([class]) {
+    padding-left: 0;
+    padding-right: 2.5em;
+}
+ul:not([class]) li,
+ol:not([class]) li {
+    transform: translateX(2.5em);
+    animation: fixlists 1s;
+}
+
+@keyframes fixlists {
+  0% {
+    text-indent: -0.001em;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+
 @media screen and (max-width: 500px)/*mobile*/
 {
     #awesomeTextTitle {
@@ -461,10 +539,22 @@ footer
         margin-left: 0px;
         font-size: 12px;
         justify-content: space-between;
+        margin-right: 0px;
     }
 }
 @media screen  and (max-width: 979px) /* Tablet */
 {
+    #servicepicture img {
+        display: none;
+    }
+    #services {
+        justify-content: center;
+        align-items: center;
+    }
+        #services div {
+        font-size: 20pt;
+        margin-left: 0px;
+    }
         #aboutUS {
         justify-content: center;
         align-items: center;
