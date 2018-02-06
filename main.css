@@ -446,7 +446,9 @@ STYLES FOR PAGE SERVICES
     /margin-right: 450px;
 }
 #servicepicture ul li {
+    transform: translateX(2.5em);
     color:#16a085;
+    margin-left: 20px;
 }
 #servicepicture ul li span {
 list-style-type: square;
@@ -454,16 +456,7 @@ font-family: "Lato Regular";
 font-size: 12pt;
 color:#7f8c8d;
 }
-ul:not([class]),
-ol:not([class]) {
-    padding-left: 0;
-    padding-right: 2.5em;
-}
-ul:not([class]) li,
-ol:not([class]) li {
-    transform: translateX(2.5em);
-    animation: fixlists 1s;
-}
+
 
 @keyframes fixlists {
   0% {
@@ -476,6 +469,9 @@ ol:not([class]) li {
 
 @media screen and (max-width: 500px)/*mobile*/
 {
+    #servicepicture ul li {
+        transform: none;
+    }
     #awesomeTextTitle {
         font-size: 20pt;
     }
