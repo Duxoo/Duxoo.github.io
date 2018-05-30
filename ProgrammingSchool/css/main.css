@@ -1,0 +1,721 @@
+/*
+Для всех страниц
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Ubuntu");
+body
+{
+    margin: 0px;
+}
+
+header
+{
+    background-image: url(https://itc.ua/wp-content/uploads/2017/02/html-code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #363636;
+    height: 696px;
+}
+#headerAbout {
+    background-image: url(https://itc.ua/wp-content/uploads/2017/02/html-code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #363636;
+    height: 200px;
+}
+#header1
+{
+    background-color: #e74c3c;
+    height: 100px;
+}
+#logo
+{
+    background-image: url(images/logo.png);
+    width: 110px;
+    height: 57px;
+    margin-left: 10px;
+    float: left;
+    margin-top: 15px;
+}
+.columnheader
+{
+    margin-left: 23.958%;
+    margin-right: 23.958%;
+    height: 596px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.columnheader h1
+{
+    font-family: "Open Sans Light";
+    font-size: 63px;
+    color: white;
+    text-align: center;
+}
+#text1
+{
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+a span
+{
+    text-decoration: underline;
+}
+a
+{
+color:#db574a; 
+}
+
+#twitter
+{
+    background-image: url(images/twitter.png);
+    width: 18px;
+    height: 14px;
+}
+#facebook
+{
+    background-image: url(images/facebook.png);
+    width: 6px;
+    height: 14px;
+    margin-left: 15px;
+
+}
+#g
+{
+    background-image: url(images/g+.png);
+    width: 16px;
+    height: 14px;
+        margin-left: 15px;
+}
+#p
+{
+    background-image: url(images/p.png);
+    width: 12px;
+    height: 14px;
+        margin-left: 15px;
+}
+#social
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+#navigation
+{
+    background-image: url(images/navigation.png);
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-color: #e74c3c;
+    border-radius: 4px;
+    display: none;
+    background-color: transparent;
+    transition-property: background-image;
+    transition-duration: 1.2s;
+}
+ol li {
+    //color:#646464;
+    color: #e74c3c;
+    font-size: 14pt;
+    font-family: "Open Sans Bold";
+}
+
+input {
+border:1px solid #aaa;
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:2px;
+width: 65%;
+height: 35px;
+}
+textarea {
+   border:1px solid #aaa;
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:2px;
+width: 65%;
+height: 35px; 
+}
+
+.button
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.051);
+font-size: 20px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+background-color: transparent;
+    margin-top: 20px;
+    width: 200px;
+}
+.button1:hover,.button:hover {
+    box-shadow: 0 0 10px #e74c3c;
+    cursor: pointer;
+}
+.button1
+{
+    color:#e74c3c;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e74c3c;
+    font-size: 20px;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+    width: 200px;
+    background-color: transparent;
+}
+#nav
+{
+    margin-top: 35px;
+    float: right;
+    margin-right: 30px;
+    color: white;
+    font-family: "Open Sans Regular";
+    font-size: 16px;
+}
+ul#nav li:hover {
+    color:black;
+}
+
+#nav li
+{
+   display: inline;
+    margin-left: 15px;
+    color: white;
+}
+#nav2
+{
+    margin: 0px;
+    z-index: 1000;
+    display: none;
+    height: 120px;
+    background-color: #e74c3c;
+}
+#nav2 li
+{
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Open Sans Bold";
+}
+#nav2 li:hover {
+    color:black;
+}
+
+ul a
+{
+    text-decoration: none;
+}
+
+#main1
+{
+    height: 100%;
+    background-color: white;
+}
+
+footer
+{
+    height: 234px;
+    background-color: black;
+}
+
+
+.footercolumn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: stretch;
+}
+
+.footerrow
+{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    
+    
+}
+.footercolumn
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+.footerheader
+{
+    font-weight: bold;
+    text-transform: uppercase;
+   font-family: "Open Sans Bold";
+    font-size: 18px;
+    color: white;
+}
+.footertext
+{
+    width: 236px;
+    max-height: 164px;
+    color: #8a8a8a;
+    margin-top: 10px;
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+    text-align: left;
+}
+
+/*
+Для главной страницы
+*/
+#main2
+{
+    height: 298px;
+    background-color: #db574a;
+    background-image: url(https://itc.ua/wp-content/uploads/2017/02/html-code.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+}
+
+#main3
+{
+    height: 410px;
+    background-color: white;
+}
+
+#main1row
+{
+    margin-left: 23.958%;
+    margin-right: 23.958%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 362px;
+}
+#main1column1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+#main1column2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+#main1columntitle
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Open Sans Bold";
+    font-size: 22px;
+    color: black;
+}
+#main1columntext
+{
+    margin-top: 20px;
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+    color: #3e3e3e;
+}
+.colortextmain1
+{
+    color:#db574a;
+}
+#help
+{
+    font-family: "Open Sans Light";
+    font-size: 38px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+#main2row
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23.958%;
+    margin-right: 23.958%;
+    text-align: center;
+    
+}
+.main2column
+{
+    margin-top: 20px;
+     display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    height: 160px;
+}
+
+.main2text
+{
+    margin-top: 20px;
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+    color: white;
+}
+#cart
+{
+    background-image: url(images/cart.png);
+    width: 34px;
+    height: 26px;
+}
+#battery
+{
+    background-image: url(images/battery.png);
+    width: 49px;
+    height: 26px;
+}
+#sign
+{
+    background-image: url(images/sign.png);
+    width: 47px;
+    height: 26px;
+}
+#download
+{
+    background-image: url(images/download.png);
+    width: 48px;
+    height: 24px;
+}
+#our
+{
+    color:#db574a;
+    margin-top: 30px;
+    font-family: "Open Sans Bold";
+    font-size: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+#main3row
+{
+    margin-left: 23.958%;
+    margin-right: 23.958%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+#picture1
+{
+    background-image: url(https://igx.4sqi.net/img/general/200x200/21354995_NLHwTI0b1UOMiZErNebLc5_tSVuigyLm_bKmcIuuZVo.jpg);
+    width: 200px;
+    height: 200px;
+}
+#picture2
+{
+    background-image: url(https://igx.4sqi.net/img/general/200x200/37082437_PNIBr-Gkx96QMpmMQAU6OxWWOLixswK7rlQdsWqzVtU.jpg);
+    width: 200px;
+    height: 200px;
+}
+#picture3
+{
+    background-image: url(http://www.spbkurs.ru/wp-content/uploads/2010_06_30_bachelor_graduation_0051-200x200.jpg);
+    width: 200px;
+    height: 200px;
+}
+#footerrow
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 234px;
+}
+
+.main3column
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.main3text
+{
+    margin-top: 10px;
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+}
+
+.footerrow
+{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    
+    
+}
+.footercolumn
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+.footerheader
+{
+    font-weight: bold;
+    text-transform: uppercase;
+   font-family: "Open Sans Bold";
+    font-size: 18px;
+    color: white;
+}
+.footertext
+{
+    width: 236px;
+    max-height: 164px;
+    color: #8a8a8a;
+    margin-top: 10px;
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+    text-align: left;
+}
+
+}
+
+#C {
+    display: none;
+}
+
+/*
+СТИЛИ ДЛЯ СТРАНИЦЫ О НАС
+*/
+#ulhistory li #spanhistory {
+    color: #e74c3c;
+    font-size: 14pt;
+}
+#history {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: "Ubuntu";
+    font-size: 20pt;
+    color: #3e3e3e;
+    font-weight: bold;
+}
+#history span {
+/color: #646464;
+color: #3f3d50;
+font-size: 12pt;
+}
+#historyimg {
+    float: left;
+}
+#historyimg2 {
+    float: right;
+}
+#ulhistory {
+    color:#3e3e3e;
+    font-size: 12pt;
+}
+.test li:hover{
+    color:#e74c3c;
+}
+.test li {
+    cursor: pointer;
+}
+#tabl {
+    color: #3e3e3e;
+    border: black;
+    font-size: 13pt;
+    border-collapse:collapse;
+}
+TD, TH {
+    border: 2px solid #3e3e3e;
+    padding:5px;
+}
+#tabl .tablespan {
+    color:#e74c3c;
+    font-size: 16pt;
+}
+/*
+МЕДИАЗАПРОСЫ
+*/
+@media screen and (max-width: 979px)/*tablet*/
+{
+#nav
+    {
+        display:none;
+    }
+    #main1row
+    {
+        display: block;
+        margin-top: 4%;
+    }
+    #main1column2
+    {
+        margin-top: 5%;
+    }
+    .footerrow
+    {
+        margin-left: 20%;
+        justify-content: flex-start;
+    }
+    #navigation
+    {
+        display: block;
+        float: right;
+        margin-top: 50px;
+        margin-left: 80px;
+    }
+    #header1{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .footertext
+    {
+        width: 200px;
+    }
+    footer
+    {
+        height: 241px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+        .footertext
+    {
+        width: 155px;
+        font-size: 12px;
+    }
+    .footerheader
+    {
+        font-size: 14px;
+    }
+        .main2text
+    {
+        font-size: 12px;
+    }
+    .columnheader h1{
+        font-size: 50px;
+    }
+    #history img {
+        display: none;
+    }
+    #history {
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 629px)
+{
+   #main1
+    {
+        height: auto;
+    }
+    #main3
+    {
+        height: 800px;
+    }
+    #main3row
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    #picture1
+    {
+        height: 200px;
+    }
+    .footerrow
+    {
+        margin-left: 0px;
+    }
+    #main1columntitle
+    {
+        font-size: 14px;
+    }
+    #main1columntext
+    {
+        font-size: 12px;
+    }
+    div#our {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 587px)
+{
+    .main2text
+    {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 496px)
+{
+    .footerheader
+    {
+        font-size: 12px;
+    }
+    #our
+    {
+        font-size: 40px;
+    }
+    #help
+    {
+        font-size: 20px;
+    }
+    #main3
+    {
+        height: 850px;
+    }
+    .footertext
+    {
+        font-size: 10px;
+    }
+    footer
+    {
+        height: 300px;
+    }
+    #our
+    {
+        font-size: 24px;
+    }
+    .columnheader h1
+    {
+        font-size: 35px;
+    }
+    #text1
+    {
+        font-size: 12px;
+    }
+    .footerrow {
+        min-height: 200px;
+    }
+    .footercolumn {
+        min-height: 200px;
+    }
+}
