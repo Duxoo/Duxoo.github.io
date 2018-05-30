@@ -1,3 +1,7 @@
+window.onload = function () {
+		document.getElementById('preloader').style.display = 'none';
+	}
+
 function show(){
     if(document.getElementById("nav2").style.display=='none')
         {
@@ -54,3 +58,4 @@ document.getElementById("Webli").onclick = function() {
  	document.getElementById("Web").style.display = 'none';
 }
 }
+
