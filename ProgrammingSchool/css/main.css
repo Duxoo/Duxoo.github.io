@@ -563,12 +563,7 @@ TD, TH {
     color:#e74c3c;
     font-size: 16pt;
 }
-img {
-    max-width: 100%;
-}
-iframe {
-    width: 100%;
-}
+/*
 МЕДИАЗАПРОСЫ
 */
 @media screen and (max-width: 979px)/*tablet*/
@@ -611,6 +606,9 @@ iframe {
         height: 241px;
     }
 }
+iframe {
+    width: 100%;
+}
 
 @media screen and (max-width: 767px)
 {
@@ -629,6 +627,10 @@ iframe {
     }
     .columnheader h1{
         font-size: 50px;
+    }
+    #history img {
+        /display: none;
+        max-width: 100%;
     }
     #history {
         margin: 10px;
