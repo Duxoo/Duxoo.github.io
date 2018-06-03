@@ -172,14 +172,55 @@ var WinCount = 0;//для подсчета количества пар для п
 var ScoreCounter = 0;//для подсчета количества очков
 var m=0;//минуты для таймера
 var s=0;//секунды для таймера
-//функция показа карты
-function show() {
+var n1;
+var stopTimer = false;
+//функция расфасовки карт 
+function show(n) {
+  n1=n/2;
+  document.getElementById("field").style.display = "block";
+   var divs = document.querySelectorAll(".rowwrapper2 div");
+      for(var i = 0 ;i < n; i++) {
+    divs[i].style.backgroundImage = "url('http://img1.liveinternet.ru/images/attach/c/1//49/532/49532290_d00132r01.jpg')";
+  }
+  clickCounter = 0;
+  WinCount = 0;
+  ScoreCounter = 0;
+  clearTimeout(timer);
+  m=0;
+  s=0;
+   document.getElementById("time").innerHTML="Time: "+m+" min"+" : "+s+" sec";
+      /*for(var i = 0 ;i < n; i++) {
+    divs[i].style.display= "block";
+  }*/
+  switch(n) {
+    case 12:
+        for(var i = 0 ;i < n; i++) {
+    divs[i].style.display= "block";
+  }
+          for(var i = 12;i < 36; i++) {
+    divs[i].style.display= "none";
+  }
+    break;
+    case 24:   
+      for(var i = 0 ;i < n; i++) {
+        divs[i].style.display= "block";
+  }
+      for(var i = 24 ;i < 36; i++) {
+       divs[i].style.display= "none";
+  }
+  break;
+  case 36:
+      for(var i = 0 ;i < n; i++) {
+        divs[i].style.display= "block";
+  }
+  break;
+  }
 var array = [];
 var array2 = [];
 var array3 = [];
 //РАНДОМ БЕЗ ПОВТОРЕНИЙ НАЧАЛО
 var divs = document.querySelectorAll(".rowwrapper2 div");
- for (var i = 0; i < 12; i++) {
+ for (var i = 0; i < n/2; i++) {
      var cardsCopy = Cards[GetRan(52)].cardName;
      if(array.indexOf(cardsCopy) == -1){ array.push(cardsCopy);
      array2 = array.slice(0);
@@ -195,13 +236,11 @@ var divs = document.querySelectorAll(".rowwrapper2 div");
     //РАНДОМ БЕЗ ПОВТОРЕНИЙ КОНЕЦ. РАНДОМНЫЕ ЗНАЧЕНИЯ ХРАНЯТСЯ В ARRAY3
     //ставим атрибут name каждому блоку рандомно и заносим их в массив,чтобы потом сверять их с id
     var i =0;
-for(var div of divs) {
-    var ran = GetRan(array3.length);
-    div.setAttribute("name",array3[ran]);
+ for(var i = 0; i < n; i++) {
+  var ran = GetRan(array3.length);
+    divs[i].setAttribute("name",array3[ran]);
     arraytest[i] = array3[ran];
     array3.splice(ran,1);
-    i++;
-    
  }
 }
 
@@ -243,10 +282,12 @@ function show1(id)
         if(test == test2) {
             clickCounter = 0;
             WinCount++;
-            ScoreCounter+=5;
+            ScoreCounter+=10;
             document.getElementById('score').innerHTML = "Ваш счет: " + ScoreCounter;
-                if(WinCount == 12) {
-        alert("Победа!");
+                if(WinCount == n1) {
+        alert("Победа! Вы набрали " + ScoreCounter + " очков " + "за " + m + " минут и " + s + " секунд");
+        stopTimer = true;
+        return 1;
     }
             return 0;
             
@@ -254,7 +295,7 @@ function show1(id)
         //если карты неодинаковые
         else {
            setTimeout(function() {
-                ScoreCounter-=10;
+                ScoreCounter-=5;
                 document.getElementById('score').innerHTML = "Ваш счет: " + ScoreCounter;
             },1500);
             //меняем рубашку через 1,5 секунды
@@ -275,16 +316,17 @@ function show1(id)
             clickCounter++;
 
 }
-
+var timer;
   //таймер
   function startTimer() {
+    if(stopTimer) return;
     s++;
     if(s == 60) {
         s=0;
         m++;
     }
     document.getElementById("time").innerHTML="Time: "+m+" min"+" : "+s+" sec";
-    setTimeout(startTimer, 1000);
+    timer=setTimeout(startTimer, 1000);
   }
 
 //начать игру заного
