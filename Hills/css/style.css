@@ -1,0 +1,206 @@
+header {
+	background-image: url(../images/top_bg.png);
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(17, 17, 17, 0.7);
+	background-blend-mode: multiply;
+}
+.navbar__li {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 25px;
+	font-size: 14pt;
+	text-align: center;
+	list-style: none;
+	margin-top: 20px;
+}
+a:hover{
+	text-decoration: none;
+}
+.navbar__li:hover {
+	color: #c7b299;
+}
+.firstSlide {
+	background-image: url(../images/top_bg.png);
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(17, 17, 17, 0.7);
+	background-blend-mode: multiply;
+}
+.benefit {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	font-weight: 300;
+}
+.padding {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.second-block {
+	background-image: url(../images/block_bg.png);
+	height: 700px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.second-block-title {
+	font-family: 'Raleway', sans-serif;
+	color: #555555;
+	font-size: 18pt;
+}
+.padding-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.second-block-title-color {
+	color: #c7b299;
+}
+.font-size-30pt {
+	font-size: 26pt;
+}
+.navbar-toggle .icon-bar {
+    background-color: #ccc;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.nav-color {
+	background-color: rgba(17, 17, 17, 0.00001);
+}
+.third-block {
+	background-color: #392821;
+	height: 200px;
+
+}
+.third-block-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 21pt;
+	color: #c7b299;
+	font-weight: 400;
+}
+.text-white {
+	color: white;
+}
+.button-purchase {
+  border-radius: 3px;
+ background-color: #998675;
+  box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+  width: 170px;
+  height: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  border: 0;
+  cursor: pointer;
+}
+.button-purchase:hover {
+	background-color: #998664;
+}
+.margin-50 {
+	margin-top: 50%;
+}
+.third-block-text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	color: white
+}
+.button-projects {
+  border-style: solid;
+  background-color: white;
+  border-width: 1px;
+  border-color: rgb(235, 235, 235);
+  border-radius: 3px;
+  width: 137px;
+  height: 34px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  cursor: pointer;
+}
+.button-projects:hover {
+	 background-color: #998675;
+	 color: white;
+}
+.margin-left {
+	margin-left: 15px;
+}
+ .project-items {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+} 
+img {
+	max-width: 100%;
+}
+.col-md-4 img {
+    -webkit-transition: all ease 1.5s;
+    transition: all ease 1.5s;
+}
+.col-md-4 img:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    
+}
+.project-items:hover  {
+	background-color: rgba(17, 17, 17, 0.3);
+} 
+.margin {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.fourth-block {
+	background-image: url(../images/block2_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 695px;
+	width: 100%;
+	background-position: center;
+}
+.fourth-block-title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 14pt;
+	color: #555555;
+}
+.fourth-block ul {
+	list-style-image: url(../images/iconList.png);
+	text-align: left;
+	font-size: 12pt;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+.fifth-block {
+	background-image: url(../images/block3_bg.png);
+	height: 300px;
+	width: 100%;
+
+}
+.fifth-block-text {
+	font-size: 12pt;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: #c7b299;
+	  text-transform: uppercase;
+}
+.fifth-block-number {
+	font-size: 35pt;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: white;
+
+}
+@media screen and (max-width: 767px) {
+	.fifth-block {
+		height: 1100px;
+	}
+}
