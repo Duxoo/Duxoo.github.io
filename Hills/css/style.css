@@ -86,6 +86,7 @@ a:hover{
 	font-size: 21pt;
 	color: #c7b299;
 	font-weight: 400;
+	text-align: center;
 }
 .text-white {
 	color: white;
@@ -112,7 +113,8 @@ a:hover{
 .third-block-text {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14pt;
-	color: white
+	color: white;
+	text-align: center;
 }
 .button-projects {
   border-style: solid;
@@ -199,8 +201,125 @@ img {
 	color: white;
 
 }
+.posts {
+	height: 753px;
+	width: 100%;
+}
+
+.partners {
+	height: 489px;
+	width: 100%;
+	background-image: url(../images/partners-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.footer-info {
+	height: 508px;
+	width: 100%;
+	background-color: #191919;
+}
+footer {
+	height: 111px;
+	width: 100%;
+	background-color: #111111;
+}
+.footer-text{
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(85, 85, 85);
+  line-height: 1.714;
+  text-align: left;
+}
+.read-more {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(209, 209, 209);
+  line-height: 1.429;
+  text-align: left;
+}
+.footer-title {
+  font-size: 24px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+.footer-date {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: rgb(54, 54, 54);
+  line-height: 1.667;
+  text-align: left;
+}
+.footer-text span {
+	color: #02b4e4;
+}
+.footer-text a {
+	color: #757575;
+}
+.footer-text:hover {
+	color: #c7b299;
+	cursor: pointer;
+}
+.widgets-padding {
+	padding: 10px;
+}
+hr {
+	color: #252525;
+}
+.copyright{
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: rgb(85, 85, 85);
+  line-height: 1.538;
+  text-align: left;
+}
+.copyright-white {
+	color: #959595;
+}
+.copyright-hover:hover {
+	color: #bfab93;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+	.footer-info {
+		height: 628px;
+	}
+}
 @media screen and (max-width: 767px) {
 	.fifth-block {
 		height: 1100px;
+	}
+	.third-block {
+		height: 270px;
+	}
+	.partners {
+	height: 689px;
+	}
+	.partners .col-md-3 {
+		display: flex;
+	}
+	.posts {
+	height: 873px;
+}
+.footer-info {
+		height: 1028px;
+	}
+	.partners {
+		height: 839px;
+	}
+	.partners div img {
+		padding-top: 40px;
+	}
+}
+@media screen and (max-width: 578px) {
+	.footer-info {
+		height: 1128px;
+	}
+	.posts {
+		height: 937px;
 	}
 }
