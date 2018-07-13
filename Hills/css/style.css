@@ -53,6 +53,7 @@ a:hover{
 	font-family: 'Raleway', sans-serif;
 	color: #555555;
 	font-size: 18pt;
+	text-align: center;
 }
 .padding-20 {
 	padding-top: 20px;
@@ -317,9 +318,9 @@ hr {
 }
 @media screen and (max-width: 578px) {
 	.footer-info {
-		height: 1128px;
+		height: 1228px;
 	}
 	.posts {
-		height: 937px;
+		height: 987px;
 	}
 }
