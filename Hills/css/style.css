@@ -55,6 +55,26 @@ a:hover{
 	font-size: 18pt;
 	text-align: center;
 }
+.project-text {
+	height: 100px;
+	color: #c7b299;
+	font-size: 20px;
+	font-family: "Raleway";
+	color: rgb(199, 178, 153);
+	line-height: 1.2;
+	text-align: left;
+	background-color: #fbfaf8;
+	width: 100%;
+	padding-left: 30px;
+	padding-top: 10px; 
+}
+.project-text-2 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(209, 209, 209);
+  line-height: 1.429;
+  text-align: left;
+}
 .padding-20 {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -116,6 +136,9 @@ a:hover{
 	font-size: 14pt;
 	color: white;
 	text-align: center;
+}
+.project-block:hover .project-text {
+	background-color: #362f2d;
 }
 .button-projects {
   border-style: solid;
@@ -193,7 +216,8 @@ img {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	color: #c7b299;
-	  text-transform: uppercase;
+	text-transform: uppercase;
+	text-align: center;
 }
 .fifth-block-number {
 	font-size: 35pt;
@@ -206,7 +230,35 @@ img {
 	height: 753px;
 	width: 100%;
 }
-
+.posts-information {
+	height: 175px;
+	width: 370px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(248, 248, 248);
+	background-color: rgba(119, 119, 119, 0);
+	font-size: 20px;
+	font-family: "Raleway";
+	color: rgb(85, 85, 85);
+	line-height: 1.2;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.posts-information-text {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(140, 140, 140);
+  line-height: 1.571;
+  text-align: left;
+}
+.posts-information-read-more {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(199, 178, 153);
+  line-height: 1.429;
+  text-align: left;
+}
 .partners {
 	height: 489px;
 	width: 100%;
@@ -231,6 +283,9 @@ footer {
   color: rgb(85, 85, 85);
   line-height: 1.714;
   text-align: left;
+}
+.posts-hover:hover .posts-information {
+	background-color: #362f2d;
 }
 .read-more {
   font-size: 14px;
@@ -268,7 +323,7 @@ footer {
 	padding: 10px;
 }
 hr {
-	color: #252525;
+	background-color: #2c2b2b;
 }
 .copyright{
   font-size: 13px;
@@ -284,7 +339,11 @@ hr {
 	color: #bfab93;
 	cursor: pointer;
 }
-
+@media screen and (max-width: 1200px) {
+	.posts-information {
+		width: 100%;
+	}
+}
 @media screen and (max-width: 991px) {
 	.footer-info {
 		height: 628px;
@@ -304,7 +363,7 @@ hr {
 		display: flex;
 	}
 	.posts {
-	height: 873px;
+	height: 1487px;
 }
 .footer-info {
 		height: 1028px;
@@ -315,12 +374,20 @@ hr {
 	.partners div img {
 		padding-top: 40px;
 	}
+	.project-text {
+		width: 374px;
+	}
+	.posts-information {
+		width: 370px;
+	}
 }
 @media screen and (max-width: 578px) {
 	.footer-info {
 		height: 1228px;
 	}
-	.posts {
-		height: 987px;
+}
+@media screen and (max-width: 400px) {
+	.posts-information {
+		width: 100%;
 	}
 }
