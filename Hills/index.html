@@ -8,9 +8,37 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+	<script>
+		  $(function() {
+		  	$(window).scroll(function() {
+		  	if($(this).scrollTop() != 0) {
+		  		$('#topNubex').fadeIn();
+		  	} else {
+		  		$('#topNubex').fadeOut();
+		  		}
+		  	});
+		  $('#topNubex').click(function() {
+		  	$('body,html').animate({scrollTop:0},700);
+		  });
+		  });
+	</script>
+	<script>
+ $(document).ready(function(){
+    $("#navbarsExample01").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+	</script>
 </head>
 <body>
 <header>
@@ -23,13 +51,13 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample01">
 			<a href="#"><li class="nav-item navbar__li">Home</li></a>
-			<a href="#"><li class="nav-item navbar__li">About Us</li></a>
-			<a href="#"><li class="nav-item navbar__li">Portofolio</li></a>
-			<a href="#"><li class="nav-item navbar__li">Features</li></a>
-			<a href="#"><li class="nav-item navbar__li">Blog</li></a>
-			<a href="#"><li class="nav-item navbar__li">Pricing</li></a>
-			<a href="#"><li class="nav-item navbar__li">Shortcodes</li></a>
-			<a href="#"><li class="nav-item navbar__li">Contact</li></a>
+			<a href="#about"><li class="nav-item navbar__li">About Us</li></a>
+			<a href="#portfolio"><li class="nav-item navbar__li">Portofolio</li></a>
+			<a href="#features"><li class="nav-item navbar__li">Features</li></a>
+			<a href="#posts"><li class="nav-item navbar__li">Blog</li></a>
+			<a href="#counter"><li class="nav-item navbar__li">Counter</li></a>
+			<a href="#shortCodes"><li class="nav-item navbar__li">Shortcodes</li></a>
+			<a href="#contact"><li class="nav-item navbar__li">Contact</li></a>
 			<a href="#"><li class="nav-item navbar__li"><img src="images/cart.png"></li></a>
 			<a href="#"><li class="nav-item navbar__li"><img src="images/search.png"></li></a>
         </ul>
@@ -40,7 +68,7 @@
 </div>
 </header>
 <div class="container justify-content-center">
-	<div class="row padding">
+	<div class="row padding" id="about">
 		<div class="col-md-3">
 			<div class="row justify-content-center">
 			<img src="images/pen.png"></div>
@@ -98,7 +126,7 @@
 		<div class="col-md-6 benefit padding-20">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
 	</div>
 </div>
-<div class="container-fluid third-block">
+<div class="container-fluid third-block" id="shortCodes">
 	<div class="row third-block">
 		<div class="col-md-9 align-self-center justify-content-center">
 			<div class="third-block-title text-white">
@@ -115,7 +143,7 @@
 		</div>
 	</div>
 </div>
-<div class="container justify-content-center">
+<div class="container justify-content-center" id="portofolio">
 	<div class="row padding justify-content-center ">
 		<h1 class="row second-block-title padding-20">Our Latest Projects.</h1>
 		<div class="w-100"></div>
@@ -198,7 +226,7 @@
    Тег video не поддерживается вашим браузером. 
    <a href="video/duel.mp4">Скачайте видео</a>.
   </video>
-  <div class="container-fluid fourth-block benefit">
+  <div class="container-fluid fourth-block benefit" id="features">
   	<div class="row justify-content-end fourth-block">
   		<div class="fourth-block-title col-md-6 col-sm-6 align-self-center">
   			Excellent for Mobile Devices.<br><br>
@@ -214,7 +242,7 @@
   		</div>
   	</div>
   </div>
-  <div class="container-fluid fifth-block">
+  <div class="container-fluid fifth-block" id="counter">
   	<div class="row justify-content-center fifth-block">
   		<div class="col-md-2 align-self-center justify-content-center">
   			<div class="row justify-content-center">
@@ -288,7 +316,7 @@
   		</div>
   	</div>
   </div>
-  <div class="container-fluid posts justify-content-center">
+  <div class="container-fluid posts justify-content-center" id="posts">
   	<div class="row justify-content-center">
   	<div class="second-block-title padding-20 justify-content-center">Recent Posts</div>
   	<div class="w-100"></div>
@@ -339,7 +367,7 @@
   		</div>
   	</div>
   </div>
-  <div class="footer-info justify-content-center d-flex">
+  <div class="footer-info justify-content-center d-flex" id="contact">
   	<div class="container d-flex">
   	<div class="row justify-content-center align-self-center">
   	  	<div class="col-md-3 justify-content-center d-flex">
@@ -457,6 +485,7 @@
   		</div>
   	</div>
   </footer>
+  <div class="arrow-up" style="display: block;" id="topNubex"></div>
 <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

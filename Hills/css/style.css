@@ -339,6 +339,17 @@ hr {
 	color: #bfab93;
 	cursor: pointer;
 }
+.arrow-up {
+	background-image: url(../images/arrow_up.png);
+	z-index: 10000;
+	height: 64px;
+	width: 64px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	opacity: .6;
+	cursor: pointer;
+}
 @media screen and (max-width: 1200px) {
 	.posts-information {
 		width: 100%;
