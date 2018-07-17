@@ -512,5 +512,29 @@
 	<script>
  new WOW().init();
 </script>
+<script>
+	var imgHead = [ 
+'images/top_bg.png', 
+'images/top_bg_1.jpg', 
+'images/top_bg_2.jpg', 
+'images/top_bg_3.jpg', 
+], i=1; 
+function csaHead(){ 
+/* CSA head */ 
+if(i > (imgHead.length-1)){ 
+i=0; 
+}else{ 
+$('header').animate({'opacity':'0'},400,function(){ 
+$('header').css({'background':'url('+imgHead[i]+')'});
+$('header').css({'background-repeat':'no-repeat'});
+$('header').css({'background-size':'cover'});
+$('header').css({'background-color':'rgba(17, 17, 17, 0.7)'});      
+i++; 
+}); 
+$('header').animate({'opacity':'1'},200); 
+} 
+} 
+var intervalCsaHead = setInterval(csaHead,6000);
+</script>
 </body>
 </html>
