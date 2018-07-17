@@ -339,6 +339,14 @@ hr {
 	color: #bfab93;
 	cursor: pointer;
 }
+.project-arrow {
+	background-image: url(../images/project-arrow.png);
+	height: 20px;
+	width: 30px;
+	position: absolute;
+	top: 70%;
+    left: 22%;
+}
 .arrow-up {
 	background-image: url(../images/arrow_up.png);
 	z-index: 10000;
