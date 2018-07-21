@@ -1,0 +1,379 @@
+header {
+	background-image: url(../images/banner_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 800px;
+	width: 100%;
+}
+.banner {
+	height: 800px;
+}
+.banner_button {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(34, 34, 34);
+  line-height: 1.714;
+  text-align: center;
+  border-radius: 17px;
+  background-color: rgb(255, 255, 255);
+  width: 153px;
+  height: 35px;
+  font-weight: 500;
+  border: 0;
+  margin-left: 20px;
+}
+.navbar__li {
+	color: white;
+	font-family: 'Roboto';
+	margin-left: 25px;
+	font-size: 14pt;
+	text-align: center;
+	list-style: none;
+	margin-top: 20px;
+}
+a:hover {
+	text-decoration: none;
+}
+.banner-title {
+	font-family: 'Dosis';
+	font-weight: 600;
+	font-size: 54px;
+	color: white;
+}
+.banner-text {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+  font-weight: 300;
+}
+.customer-block {
+	height: 273px;
+	background-color: #f7fafc;
+}
+.customer-text {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(119, 119, 119);
+  line-height: 1.714;
+  text-align: left;
+}
+.customer-name {
+  font-size: 18px;
+  font-family: "Dosis";
+  color: rgb(34, 34, 34);
+  line-height: 1.333;
+  font-weight: 800;
+}
+.customer-block:hover {
+	background-color: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.margin-left-10 {
+	  margin-left:10px;
+}
+.margin-top-10 {
+	margin-top: 57px;
+}
+.banner-ul {
+	margin-top: 10px;
+}
+.banner-ul li {
+  list-style-image: url(../images/list-image.png);
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+}
+.height {
+	height: 729px;
+}
+.margin-20 {
+	margin-left: 10px;
+}
+
+.features {
+	height: 462px;
+	width: 100%;
+}
+.features-main {
+	margin-left: 20px;
+}
+.features-title {
+  font-size: 24px;
+  font-family: "Dosis";
+  color: rgb(34, 34, 34);
+  line-height: 1;
+  font-weight: 500;
+}
+.features-text {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(119, 119, 119);
+  line-height: 1.714;
+  text-align: left;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.leave {
+	height: 800px;
+	background-image: url(../images/leave_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.leave-title {
+  font-size: 36px;
+  font-family: "Dosis";
+  color: rgb(34, 34, 34);
+  line-height: 0.833;
+  text-align: left;
+}
+.leave-text {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(119, 119, 119);
+  line-height: 1.714;
+  text-align: left;
+}
+.leave-ul li {
+  list-style-image: url(../images/list-image-2.png);
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(119, 119, 119);
+  line-height: 1.714;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.screenshots {
+	height: 917px;
+	background-color: #f7fafc;
+}
+.price {
+	height: 898px;
+	background-color: white;
+}
+.customers {
+	height: 690px;
+	background-color: white;
+}
+.download {
+	height: 471px;
+	background-image: url(../images/download_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+.download-title {
+  font-size: 36px;
+  font-family: "Dosis";
+  color: rgb(255, 255, 255);
+  line-height: 0.667;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.block-2-margin {
+	padding-top: 10px;
+    padding-left: 40px;
+}
+.screenshots-title {
+  font-size: 36px;
+  font-family: "Dosis";
+  color: rgb(34, 34, 34);
+  line-height: 0.833;
+  text-align: center;
+}
+.screenshots-text {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(119, 119, 119);
+  line-height: 1.714;
+  text-align: center;
+  margin-top: 12px;
+}
+.price-title {
+	height: 50px;
+	background-color: #f7fafc;
+	width: 100%;
+	text-align: center;
+}
+.rectangle {
+	width: 100%;
+	height: 80px;
+	background: red;
+}
+.price-triangle {
+	background-image: url(../images/price-triangle.png);
+	width: 263px;
+	height: 120px;
+}
+img {
+	max-width: 100%;
+}
+.triangle-down {
+    width: 100%;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 40px solid red;
+}
+.d23 {
+height: 55px; width: 100px; margin: 35px 20px 0 0;
+background: #B1BA5C;
+position: relative;}
+.d23:before {
+content: "";
+height: 0; width: 0;
+position: absolute; left: 0; top: -35px;
+border-bottom: 35px solid #B1BA5C;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+}
+.apple-icon-donwload-bg {
+  border-radius: 3px;
+  background-color: rgb(247, 250, 252);
+  width: 115px;
+  height: 100%;
+  background-image: url(../images/apple-icon.png);
+}
+.download-bg {
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+  height: 115px;
+}
+.download-bg-text {
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+  height: 115px;
+  width: 245px;
+  padding-left: 20px;
+}
+.download-button {
+	height: 115px;
+	width: 360px;
+	margin: 10px;
+}
+.download-button-title {
+  font-size: 30px;
+  font-family: "Dosis";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  line-height: 0.8;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.download-button-text {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(119, 119, 119);
+  line-height: 1.714;
+  text-align: left;
+}
+
+.footer {
+	height: 180px;
+	background-color: #222222;
+}
+.social div {
+	margin-left: 20px;
+}
+.footer-text {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+  text-align: center;
+}
+.facebook {
+	width: 10px;
+	height: 18px;
+	background-image: url(../images/facebook.png);
+	background-repeat: no-repeat;
+}
+.facebook:hover {
+	background-image: url(../images/facebook-hover.png);
+}
+.twitter {
+	width: 17px;
+	height: 14px;
+	background-image: url(../images/twitter.png);
+	background-repeat: no-repeat;
+	margin-top: 4px;
+}
+.twitter:hover {
+	background-image: url(../images/twitter-hover.png);
+}
+.ball {
+	width: 17px;
+	height: 17px;
+	background-image: url(../images/ball.png);
+	background-repeat: no-repeat;
+	 margin-top: 1px;
+}
+.ball:hover {
+	background-image: url(../images/ball-hover.png);
+}
+.be {
+	width: 22px;
+	height: 14px;
+	background-image: url(../images/be.png);
+	background-repeat: no-repeat;
+	margin-top: 4px;
+}
+.be:hover {
+	background-image: url(../images/be-hover.png);
+}
+
+@media screen and (max-width: 767px) {
+	.height {
+	height: 734px;
+}
+.customer-block {
+	margin-top: 20px;
+}
+.customers {
+    height: 1231px;
+    }
+.features {
+    height: 700px;
+}
+}
+@media screen and (max-width: 769px) {
+	.max-widht-price {
+		width: 263px;
+	}
+}
+@media screen and (max-width: 503px) {
+#navbarsExample01 {
+
+}
+
+}
+@media screen and (max-width: 396px) {
+.features {
+	height: 1333px;
+}
+.download {
+	height: 547px;
+}
+header {
+	height: 850px;
+}
+.banner-title {
+	font-size: 44px;
+}
+.download-button {
+	width: 315px;
+}
+}
+@media screen and (max-width: 396px) {
+.download-bg-text {
+	width: 200px;
+}
+}
+
