@@ -11,6 +11,10 @@ img {
 	max-width: 100%;
 }
 
+iframe {
+  width: 100%;
+}
+
 .welcome-screen {
 	height: 880px;
 	width: 100%;
@@ -41,6 +45,10 @@ header ul a {
 	color: white;
 	font-size: 18pt;
 	margin-left: 15px;
+}
+
+.navbar__li a {
+  color: white;
 }
 
 .welcome-screen-company-name {

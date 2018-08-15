@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Giant App</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -14,19 +14,18 @@
 <body>
  <!--заголовок -->
 <header>
-<section class="container banner">
+<div class="container banner">
 <nav class="navbar navbar-dark navbar-expand-md nav-color">
-      <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse row justify-content-center" id="navbarsExample01">
-        <a href="#"><li class="nav-item navbar__li">Home</li></a>
-        <a href="#"><li class="nav-item navbar__li">Features</li></a>
-        <a href="#"><li class="nav-item navbar__li">Pricing</li></a>
+        <ul class="collapse navbar-collapse row justify-content-center" id="navbarsExample01">
+        <li class="nav-item navbar__li"><a href="#">Home</a></li>
+        <li class="nav-item navbar__li"><a href="#">Features</a></li>
+        <li class="nav-item navbar__li"><a href="#">Pricing</a></li>
         <li class="nav-item navbar__li"><button class="banner_button">Donwload Now</button></li>
-      </div>
+        </ul>
     </nav>
     <div class="w-100"></div>
     <div class="container row height align-self-center">
@@ -47,15 +46,15 @@
     <button class="banner_button">Start Exploring Us</button>
       </div>
     </div>
-  </section>
+  </div>
 </header>
 <!-- 2 блок -->
-<section class="features d-flex justify-content-center flex-column">
+<div class="features d-flex justify-content-center flex-column">
     <div class="container d-flex justify-content-center align-self-center block-2-margin">
       <div class="row justify-content-center">
         <div class="col-md-4 block-2-margin">
           <div class="row">
-        <img src="images/sails.png">
+        <img src="images/sails.png" alt="sails">
         <div class="features-title features-main">Sell any product online
           <div class="features-text">Over 92% of computers are infected with<br> Adware and spyware. Such software is </div>
         </div>
@@ -63,7 +62,7 @@
         </div>
         <div class="col-md-4 block-2-margin">
           <div class="row">
-        <img src="images/sails.png">
+        <img src="images/sails.png" alt="sails">
         <div class="features-title features-main">Sell any product online
           <div class="features-text">Over 92% of computers are infected with<br> Adware and spyware. Such software is </div>
         </div>
@@ -71,7 +70,7 @@
         </div>
         <div class="col-md-4 block-2-margin">
           <div class="row">
-        <img src="images/sails.png">
+        <img src="images/sails.png" alt="sails">
         <div class="features-title features-main">Sell any product online
           <div class="features-text">Over 92% of computers are infected with<br> Adware and spyware. Such software is </div>
         </div>
@@ -83,7 +82,7 @@
       <div class="row justify-content-center margin-top-10">
         <div class="col-md-4 block-2-margin">
           <div class="row">
-        <img src="images/sails.png">
+        <img src="images/sails.png" alt="sails">
         <div class="features-title features-main">Sell any product online
           <div class="features-text">Over 92% of computers are infected with<br> Adware and spyware. Such software is </div>
         </div>
@@ -91,7 +90,7 @@
         </div>
         <div class="col-md-4 block-2-margin">
           <div class="row">
-        <img src="images/sails.png">
+        <img src="images/sails.png" alt="sails">
         <div class="features-title features-main">Sell any product online
           <div class="features-text">Over 92% of computers are infected with<br> Adware and spyware. Such software is </div>
         </div>
@@ -99,7 +98,7 @@
         </div>
         <div class="col-md-4 block-2-margin">
           <div class="row">
-        <img src="images/sails.png">
+        <img src="images/sails.png" alt="sails">
         <div class="features-title features-main">Sell any product online
           <div class="features-text">Over 92% of computers are infected with<br> Adware and spyware. Such software is </div>
         </div>
@@ -107,13 +106,13 @@
     </div>
       </div>
     </div>
-  </section>
+  </div>
   <div class="container"> 
     <hr>
   </div>
 
   <!-- 3 блок -->
-  <section class="leave">
+  <div class="leave">
     <div class="container">
       <div class="row justify-content-end leave">
         <div class="col-md-6 col-sm-8 leave-title align-self-center">We don't leave you standed
@@ -131,7 +130,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- 4 блок -->
   <!-- <section class="screenshots d-flex justify-content-center">
     <div class="container d-flex justify-content-center align-self-center flex-column">
@@ -168,7 +167,7 @@
     </div>
   </section> -->
   <!-- 6 блок -->
-  <video width="100%" controls="controls" poster="images/video-preview.jpg">
+  <video controls="controls" poster="images/video-preview.jpg">
    <source src="video/duel.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
    <source src="video/duel.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
    <source src="video/duel.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
@@ -176,7 +175,7 @@
    <a href="video/duel.mp4">Скачайте видео</a>.
   </video>
   <!-- 7 блок -->
-  <section class="customers d-flex justify-content-center">
+  <div class="customers d-flex justify-content-center">
     <div class="container d-flex justify-content-center align-self-center flex-column">
         <h1 class="screenshots-title">What our customers are saying</h1>
       <div class="screenshots-text">
@@ -189,7 +188,7 @@
               Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.
             </div>
             <div class="row margin-top-10">
-              <img src="images/customer.png" class="img-circle margin-left-10">
+              <img src="images/customer.png" class="img-circle margin-left-10" alt="customer">
               <div class="flex-column margin-left-10">
               <div class="customer-name">Gary Sebastian</div>
               <div class="customer-text">Apple Inc.</div>
@@ -203,7 +202,7 @@
               Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.
             </div>
             <div class="row" style="margin-top: 10px;">
-              <img src="images/customer.png" class="img-circle margin-left-10">
+              <img src="images/customer.png" class="img-circle margin-left-10" alt="customer">
               <div class="flex-column margin-left-10">
               <div class="customer-name">Gary Sebastian</div>
               <div class="customer-text">Apple Inc.</div>
@@ -217,7 +216,7 @@
               Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.
             </div>
             <div class="row" style="margin-top: 10px;">
-              <img src="images/customer.png" class="img-circle margin-left-10">
+              <img src="images/customer.png" class="img-circle margin-left-10" alt="customer">
               <div class="flex-column margin-left-10">
               <div class="customer-name">Gary Sebastian</div>
               <div class="customer-text">Apple Inc.</div>
@@ -227,9 +226,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- 8 блок -->
-  <section class="download d-flex justify-content-center">
+  <div class="download d-flex justify-content-center">
     <div class="container row justify-content-center align-self-center">
       <div class="download-title align-self-center">
           Download Giant App Now</div>
@@ -280,7 +279,6 @@
         </div>
       </div>
       </div>
-  </section>
   <!-- 9 блок -->
   <footer class="footer d-flex justify-content-center">
     <div class="container row justify-content-center align-self-center">

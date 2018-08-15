@@ -16,10 +16,16 @@ header {
 	list-style: none;
 	margin-top: 20px;
 }
+.navbar__li a {
+	color: white;
+}
 a:hover{
 	text-decoration: none;
 }
-.navbar__li:hover {
+video {
+	width: 100%;
+}
+.navbar__li a:hover {
 	color: #c7b299;
 }
 .firstSlide {

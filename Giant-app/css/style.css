@@ -9,6 +9,11 @@ header {
 .banner {
 	height: 800px;
 }
+
+video {
+  width: 100%;
+}
+
 .banner_button {
   font-size: 14px;
   font-family: "Roboto";
@@ -31,6 +36,9 @@ header {
 	text-align: center;
 	list-style: none;
 	margin-top: 20px;
+}
+.navbar__li a {
+  color: white;
 }
 a:hover {
 	text-decoration: none;

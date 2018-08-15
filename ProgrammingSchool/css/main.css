@@ -158,6 +158,11 @@ background-color: transparent;
     margin-top: 20px;
     width: 200px;
 }
+.button a {
+   color: rgb(255, 255, 255);
+   text-decoration: none; 
+}
+
 .button1:hover,.button:hover {
     box-shadow: 0 0 10px #e74c3c;
     cursor: pointer;
@@ -183,7 +188,7 @@ background-color: transparent;
     font-family: "Open Sans Regular";
     font-size: 16px;
 }
-ul#nav li:hover {
+ul#nav li a:hover {
     color:black;
 }
 
@@ -193,6 +198,11 @@ ul#nav li:hover {
     margin-left: 15px;
     color: white;
 }
+
+#nav li a {
+    color: white;  
+}
+
 #nav2
 {
     margin: 0px;
@@ -208,8 +218,12 @@ ul#nav li:hover {
     font-size: 20px;
     font-family: "Open Sans Bold";
 }
-#nav2 li:hover {
+#nav2 li a:hover {
     color:black;
+}
+
+#nav2 li a {
+    color: white;     
 }
 
 ul a
@@ -321,7 +335,7 @@ footer
     justify-content: center;
     align-items: stretch;
 }
-#main1columntitle
+.main1columntitle
 {
     text-transform: uppercase;
     font-weight: bold;
@@ -329,7 +343,7 @@ footer
     font-size: 22px;
     color: black;
 }
-#main1columntext
+.main1columntext
 {
     margin-top: 20px;
     font-family: "Open Sans Regular";
@@ -514,7 +528,7 @@ footer
 /*
 СТИЛИ ДЛЯ СТРАНИЦЫ О НАС
 */
-#ulhistory li #spanhistory {
+.ulhistory li .spanhistory {
     color: #e74c3c;
     font-size: 14pt;
 }
@@ -529,19 +543,25 @@ footer
     font-weight: bold;
 }
 #history span {
-/color: #646464;
-color: #3f3d50;
 font-size: 12pt;
 }
-#historyimg {
+
+ol li {
+    margin-top: 20px;
+}
+
+.historyimg {
     float: left;
 }
-#historyimg2 {
+.historyimg2 {
     float: right;
 }
-#ulhistory {
+.ulhistory {
     color:#3e3e3e;
     font-size: 12pt;
+}
+.ulhistory li {
+    margin-top: 10px;
 }
 .test li:hover{
     color:#e74c3c;
